@@ -1,0 +1,200 @@
+/* MAIN FOOTER */
+
+.footer {
+    border: none !important;
+    outline: none !important;
+    margin-top: -1px; /* Overlaps by 1px to hide any gap from the section above */
+}
+
+/* Add this to your footer/stats section CSS */
+.footerContainer, .statsSection {
+    outline: 1px solid transparent; /* Forces the browser to smooth the edges */
+    backface-visibility: hidden;
+    transform: translateZ(0); /* Triggers GPU rendering to close gaps */
+    margin-top: -1px; /* Pulls the section up slightly to overlap any gap */
+}
+
+.pmcFooter {
+    position: relative;
+    overflow: hidden;
+}
+
+.pmcFooter {
+    background-color: #425c86;
+    color: #ebeae7;
+    padding: 50px 20px 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* GRID LAYOUT */
+.footerContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* COLUMN STYLE */
+.footerCol {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* LOGO */
+.footerLogo {
+    width: 260px;
+    margin-bottom: 0px;
+}
+
+/* ADDRESS */
+.footerAddress {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* COLUMN HEADINGS */
+.footerHeading {
+    font-size: 18px;
+    font-weight: 600;
+    color: #CDA75E;
+    margin-top: 10px;
+}
+
+/* SOCIAL MEDIA ICONS */
+.footerSocial a {
+    color: #ebeae7;
+    font-size: 18px;
+    margin-right: 12px;
+    transition: 0.3s;
+}
+
+.footerSocial a:hover {
+    color: #CDA75E;
+}
+
+/* QUICK LINKS + DEPARTMENTS */
+.footerLinks {
+    list-style: none;
+    padding: 0;
+}
+
+.footerLinks li {
+    margin-bottom: 8px;
+}
+
+.footerLinks li a {
+    color: #ebeae7;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footerLinks li a:hover {
+    color: #CDA75E;
+}
+
+/* CONTACT ROW */
+.footerRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+}
+
+/* ICONS */
+.footerIcon {
+    color: #CDA75E;
+    font-size: 18px;
+}
+
+/* VERTICAL LEGAL LINE */
+.verticalLine {
+    width: 3px;
+    height: 18px;
+    background-color: #CDA75E;
+}
+
+/* BOTTOM BAR */
+.footerBottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    margin-top: 40px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.vDivider {
+    width: 2px;
+    height: 20px;
+    background-color: white;
+}
+
+/* ----------- RESPONSIVE ----------- */
+
+/* TABLET */
+@media (max-width: 992px) {
+    .footerContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* .footerLogo {
+        height: 100px;
+        width: 100px;
+    } */
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .footerContainer {
+        grid-template-columns: 1fr;
+        text-align: left;
+        gap: 10px;
+    }
+
+    .footerRow {
+        justify-content: left;
+    }
+
+    .footerSocial {
+        justify-content: left;
+        display: flex;
+    }
+
+    .footerBottom {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 12px;
+        font-size: 14px;
+    }
+
+    .vDivider {
+        display: none;
+    }
+}
+
+/* All footer links */
+.footerLinks a,
+.footerRow a {
+    color: #eaeaea;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Hover effect */
+.footerLinks a:hover,
+.footerRow a:hover {
+    color: #CDA75E;
+    /* your gold color */
+}
+
+/* To highlight active page */
+.footerLinks a.active,
+.footerRow a.active {
+    color: #CDA75E !important;
+}

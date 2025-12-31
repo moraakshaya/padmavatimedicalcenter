@@ -1,0 +1,421 @@
+/*
+----------------------------
+DOCTORS HERO SECTION
+----------------------------
+*/
+.doctorsHero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow-x: hidden;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1.2s ease-out;
+}
+
+.doctorsHero.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Background Video */
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(66, 92, 134, 0.8);
+  z-index: 2;
+}
+
+/* Content */
+.content {
+  position: relative;
+  z-index: 3;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: #beb8b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .doctorsHero {
+    height: 40vh;
+  }
+
+  .content {
+    padding: 50px 0px 0px;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+----------------------------
+DOCTORS CARDIOLOGY SECTION
+----------------------------
+*/
+
+.cardioSection {
+  padding: 60px 20px;
+  background: #fdf9f8;
+  text-align: center;
+  opacity: 1;
+}
+
+/* Container */
+.cardioContainer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Initial animation states */
+.cardioFeaturedTag,
+.cardioTitle,
+.cardioSubtitle {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.8s ease-out;
+}
+
+/* Stagger animation when section enters view */
+/* .cardioShow .cardioFeaturedTag {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.2s;
+}
+
+.cardioShow .cardioTitle {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.4s;
+}
+
+.cardioShow .cardioSubtitle {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.6s;
+} */
+.cardioSection.cardioShow .cardioFeaturedTag,
+.cardioSection.cardioShow .cardioTitle,
+.cardioSection.cardioShow .cardioSubtitle {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+.cardioSection.cardioShow .cardioFeaturedTag {
+  transition-delay: 0.2s;
+}
+
+.cardioSection.cardioShow .cardioTitle {
+  transition-delay: 0.4s;
+}
+
+.cardioSection.cardioShow .cardioSubtitle {
+  transition-delay: 0.6s;
+}
+
+
+
+
+/* Title styles */
+.cardioTitle {
+  font-size: 32px;
+  color: #203354;
+  margin-bottom: 10px;
+}
+
+.cardioHighlight {
+  color: #ed282e;
+}
+
+.cardioSubtitle {
+  color: #5a7184;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.cardioFeaturedTag {
+  display: inline-block;
+  background: #e27b33;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+}
+
+/* Cards wrapper */
+.cardioCardsWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+/* Initial card state */
+.cardioCardsWrapper .doctorCard {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+/* Animate cards */
+.cardioShow .doctorCard {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays */
+.cardioCardsWrapper .doctorCard:nth-child(1) { transition-delay: 0.8s; }
+.cardioCardsWrapper .doctorCard:nth-child(2) { transition-delay: 1s; }
+.cardioCardsWrapper .doctorCard:nth-child(3) { transition-delay: 1.2s; }
+.cardioCardsWrapper .doctorCard:nth-child(4) { transition-delay: 1.4s; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cardioSection {
+    padding: 20px;
+  }
+
+  .cardioTitle {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+
+  .cardioSubtitle {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .cardioCardsWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .doctorCard {
+    width: 100%;
+    max-width: 340px;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+----------------------------
+DOCTORS MEMBERS SECTION
+----------------------------
+*/
+
+/* MAIN SECTION */
+.dmSection {
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Title */
+.dmTitle {
+  font-size: 32px;
+  color: #425c86;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.dmSubtitle {
+  font-size: 18px;
+  color: #6b6b6b;
+  margin-bottom: 20px;
+}
+
+/* FILTER BAR */
+.dmFilterBar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+/* CARDS WRAPPER */
+.dmCardsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* SEARCH + DROPDOWN WRAPPER */
+.dmSearchDropdownWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+/* SEARCH BOX */
+.dmSearchBox {
+  display: flex;
+  align-items: center;
+  background: rgba(237, 40, 46, 0.12);
+  padding: 0px 14px;
+  border-radius: 28px;
+  flex: 1;
+  border: 1px solid rgba(237, 40, 46, 0.35);
+  box-shadow:
+    inset 0 2px 4px rgba(255, 255, 255, 0.6),
+    0 3px 8px rgba(237, 40, 46, 0.18);
+}
+
+.dmSearchBox input {
+  border: none;
+  outline: none;
+  background: none;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.dmSearchIcon {
+  font-size: 18px;
+}
+
+/* DROPDOWN BUTTON */
+.dmDropdownToggle {
+  background-color: transparent;
+  color: #c4585f;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* DROPDOWN MENU */
+.dmDropdownMenu {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.75);
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.45);
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.dmDropdownMenu::-webkit-scrollbar {
+  display: none;
+}
+
+/* DROPDOWN ITEM */
+.dmDropdownItem {
+  padding: 5px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #2d2a2b;
+  border-bottom: 1px solid #333;
+}
+
+.dmDropdownItem:hover {
+  background: #f1f5ff;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .dmSection {
+    padding: 20px;
+  }
+
+  .dmTitle {
+    font-size: 26px;
+  }
+
+  .dmSubtitle {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .dmSearchDropdownWrapper {
+    max-width: 80%;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 0px;
+  }
+
+  .dmSearchBox {
+    width: 100%;
+    padding: 0px 10px;
+  }
+
+  .dmDropdownToggle {
+    text-align: center;
+    font-size: 18px;
+    padding: 8px 0;
+  }
+
+  .dmDropdownMenu {
+    width: 100%;
+    top: 40px;
+  }
+}

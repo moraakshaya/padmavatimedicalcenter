@@ -1,0 +1,572 @@
+.departmentHero {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  /* Gradient background */
+  background: linear-gradient(135deg, #425c86, #c4585f);
+}
+
+.depHeroOverlay {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 900px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.depHeroTitle {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.depHeroSubtitle {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+
+
+
+/* ----- General Page Styling ----- */
+.departmentPage {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+/* ----- Banner Section ----- */
+.departmentBannerSection {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.departmentBanner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  transition: transform 0.5s ease;
+}
+
+.departmentBannerSection:hover .departmentBanner {
+  transform: scale(1.05);
+}
+
+.bannerOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.departmentTitle {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.departmentDesc {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ----- Section Headings ----- */
+.sectionHeading {
+  text-align: center;
+  font-size: 34px;
+  color: #425c86;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.sectionHeading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #425c86;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+
+
+
+/* ----- Services & Conditions Grid ----- */
+.servicesGrid,
+.conditionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.serviceCard,
+.conditionCard {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serviceCard:hover,
+.conditionCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.serviceCard p,
+.conditionCard p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ----- Not Found Styling ----- */
+.notFound {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 2rem;
+  color: #e11d48;
+}
+
+/* -------------------- ABOUT DEPARTMENT -------------------- */
+.departmentAbout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aboutImage {
+  flex: 1;
+  min-width: 300px;
+}
+
+.aboutImg {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.aboutContent {
+  flex: 1;
+  min-width: 300px;
+}
+
+.aboutContent h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #425c86;
+}
+
+.aboutContent p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  .departmentAbout {
+    gap: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- DEPARTMENT HIGHLIGHTS -------------------- */
+.departmentHighlights {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.departmentHighlights .sectionHeading {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #425c86;
+}
+
+.highlightsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.highlightCard {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlightCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.highlightIcon {
+  width: 60px;
+  height: 60px;
+  color: #fff;
+
+  background: linear-gradient(145deg, #ffa45f, #f5842a);
+
+  box-shadow:
+    0 6px 14px rgba(245, 132, 42, 0.05),
+    inset 0 2px 3px rgba(255, 255, 255, 0.5),
+    inset 0 -3px 6px rgba(0, 0, 0, 0.25);
+
+  padding: 15px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlightCard h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #2c3e50;
+}
+
+.highlightCard p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 768px) {
+  .departmentHero {
+    height: 40vh;
+  }
+
+  .depHeroOverlay {
+    gap: 0;
+  }
+
+  .depHeroTitle {
+    font-size: 33px;
+    margin-top: 70px;
+  }
+
+  .depHeroSubtitle {
+    font-size: 13px;
+  }
+
+  .departmentHighlights .sectionHeading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .highlightCard {
+    padding: 20px 15px;
+  }
+
+  .departmentServices {
+    padding: 20px;
+  }
+
+  .departmentServices h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .highlightsGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .highlightIcon {
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+  }
+
+  .highlightCard h3 {
+    font-size: 1.2rem;
+  }
+
+  .highlightCard p {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* -------------------- DOCTORS HIGHLIGHT SECTION -------------------- */
+.departmentDoctorsHighlight {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.departmentDoctorsHighlight h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.doctorsHighlightGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* Each doctor card */
+.doctorHighlightCard {
+  display: flex;
+  align-items: center;
+  background: #f5faff;
+  border-left: 6px solid #ed282e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.doctorHighlightCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.doctorImg {
+  flex: 0 0 150px;
+  margin-right: 30px;
+}
+
+.doctorImg img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.doctorInfo {
+  text-align: left;
+}
+
+.doctorInfo h3 {
+  font-size: 1.5rem;
+  color: #2d2a2b;
+  margin-bottom: 5px;
+}
+
+.doctorInfo p {
+  font-size: 16px;
+}
+
+.doctorDesignation {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e27b33;
+  margin-bottom: 5px;
+}
+
+.doctorQualifications {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.doctorExperience {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.doctorAbout {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 768px) {
+  .doctorHighlightCard {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .departmentDoctorsHighlight h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .doctorInfo h3 {
+    font-size: 20px;
+  }
+
+  .doctorImg {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .doctorInfo p {
+    font-size: 14px;
+  }
+}
+
+/* -------------------- ANIMATION STYLES -------------------- */
+
+/* Hero animation */
+.depHeroTitle,
+.depHeroSubtitle {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.9s ease-out;
+}
+
+.slideLeft {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.depHeroSubtitle.slideLeft {
+  transition-delay: 0.2s;
+}
+
+
+/* About section animation */
+.aboutImage,
+.aboutContent {
+  opacity: 0;
+  transition: all 0.9s ease-out;
+}
+
+.aboutImage {
+  transform: translateY(50px);
+}
+
+.aboutImage.slideUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.aboutContent {
+  transform: translateX(60px);
+}
+
+.aboutContent.slideRight {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.2s;
+}
+
+/* Section heading animation */
+.sectionHeading {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 0.8s ease;
+}
+
+.sectionSlideLeft {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* Card animations */
+.highlightCard,
+.serviceCard,
+.doctorHighlightCard,
+.conditionCard {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+.cardAnimate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays */
+.card0 {
+  transition-delay: 0.2s;
+}
+
+.card1 {
+  transition-delay: 0.4s;
+}
+
+.card2 {
+  transition-delay: 0.6s;
+}
+
+.card3 {
+  transition-delay: 0.8s;
+}
+
+.card4 {
+  transition-delay: 1s;
+}
+
+.card5 {
+  transition-delay: 1.2s;
+}
+
+.card6 {
+  transition-delay: 1.4s;
+}

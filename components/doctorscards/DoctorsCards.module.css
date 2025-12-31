@@ -1,0 +1,91 @@
+.doctorCard {
+  width: 350px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eef0f4;
+  transition: 0.3s;
+}
+
+.doctorCard:hover {
+  transform: translateY(-5px);
+}
+
+.doctorImg {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #dbeafe, #fde2e4);
+}
+
+.doctorImg img {
+  width: 180px;
+  height: 100%;
+  object-fit: cover;   /* or contain */
+  display: block;
+}
+
+.doctorCardInfo {
+  padding: 20px;
+  text-align: center;
+}
+
+.doctorCardInfo h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+  color: #2d2a2b;
+}
+
+.department {
+  color: #e27b33;
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-size: 14px!important;
+}
+
+.qualification {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.regNo {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+/* Bottom Row (Phone | Availability) */
+.doctorContactRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.phone {
+  font-size: 14px;
+  font-weight: 500;
+  color: #548894;
+  background: #f6e5c7;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.divider {
+  width: 1px;
+  height: 18px;
+  background: #979a9d;
+}
+
+.availability {
+  font-size: 14px;
+  font-weight: 500;
+  color: #548894;
+  background: #f6e5c7;
+  padding: 4px 10px;
+  border-radius: 8px;
+}

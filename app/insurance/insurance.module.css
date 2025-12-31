@@ -1,0 +1,738 @@
+/* =========================================================
+   INSURANCE HERO SECTION
+========================================================= */
+.insuHero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(135deg, #425c86, #c4585f);
+  color: #fff;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.insuHeroContent {
+  max-width: 600px;
+}
+
+.insuHeroContent h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.insuHeroContent p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+/* CTA Buttons */
+.ctaPrimary,
+.ctaSecondary {
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 15px;
+}
+
+/* COMMON CTA STYLES */
+.ctaPrimary,
+.ctaSecondary {
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* PRIMARY CTA – 3D */
+.ctaPrimary {
+  background: linear-gradient(145deg, #ff4a4f, #ed282e);
+  color: #fff;
+  border: none;
+  box-shadow:
+    0 10px 22px rgba(196, 88, 95, 0.05),
+    inset 0 1px 2px rgba(255, 255, 255, 0.35);
+}
+
+.ctaPrimary:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 18px 32px rgba(196, 88, 95, 0.06),
+    inset 0 1px 3px rgba(255, 255, 255, 0.45);
+}
+
+/* SECONDARY CTA – 3D OUTLINE */
+.ctaSecondary {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.18),
+    rgba(255, 255, 255, 0.05)
+  );
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow:
+    0 8px 16px rgba(0, 0, 0, 0.35),
+    inset 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+.ctaSecondary:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 14px 26px rgba(0, 0, 0, 0.45),
+    inset 0 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+/* PRESS EFFECT */
+.ctaPrimary:active,
+.ctaSecondary:active {
+  transform: translateY(1px);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.35),
+    inset 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Image */
+.insuHeroImage {
+  flex: 1 1 400px;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insuHeroImage img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin-top: 50px;
+}
+
+/* Responsive: Hero */
+@media (max-width: 992px) {
+  .insuHero {
+    padding: 20px;
+  }
+
+  .insuHeroContent h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .insuHero {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 40vh;
+    padding: 20px;
+  }
+
+  .insuHeroImage {
+    display: none !important;
+  }
+
+  .insuHeroContent {
+    padding: 50px 0 0;
+  }
+
+  .insuHeroContent h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    margin-top: 50px;
+  }
+
+  .insuHeroContent p {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .ctaPrimary,
+  .ctaSecondary {
+    margin-bottom: 15px;
+    margin-top: 6px;
+  }
+}
+
+/* =========================================================
+   MODAL
+========================================================= */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 20px;
+}
+
+.modalContent {
+  background: #fff;
+  width: 100%;
+  max-width: 750px;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 30px;
+  margin-top: 5%;
+  border-radius: 14px;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modalContent h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* Form Group */
+.formGroup {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+}
+
+/* Floating Label */
+.formGroup label {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  color: #999;
+  font-size: 16px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.formGroup input:focus + label,
+.formGroup input:not(:placeholder-shown) + label,
+.formGroup textarea:focus + label,
+.formGroup textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 14px;
+  color: #425c86;
+}
+
+/* COMMON BUTTON BASE */
+.submitBtn,
+.closeBtn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+/* SUBMIT BUTTON */
+.submitBtn {
+  background: linear-gradient(145deg, #d96b72, #c4585f);
+  color: #fff;
+  border: none;
+}
+
+.closeBtn {
+  background: linear-gradient(145deg, #e0e0e0, #cfcfcf);
+  color: #333;
+  border: none;
+}
+
+/* Modal Responsive */
+@media (max-width: 768px) {
+  .modalContent {
+    width: 95%;
+    max-height: 65vh;
+    padding: 20px;
+    margin-top: 0;
+    border-radius: 10px;
+  }
+}
+
+
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+.insuHeroContent,
+.insuHeroImage {
+  opacity: 0;
+  transform: translateX(0) translateY(0);
+  transition: all 1s ease-out;
+}
+
+.slideInLeft {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideInLeft 1s forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideInBottom {
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideInBottom 1s forwards;
+}
+
+@keyframes slideInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   INSURANCE LIST SECTION
+========================================================= */
+.insuranceList {
+  padding: 40px 8% 10px;
+  background: #fff;
+  text-align: center;
+}
+
+.insuranceList h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1c3f6b;
+}
+
+.insuranceList ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  text-align: left;
+}
+
+.insuranceList li {
+  background: #f8f9fa;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+  color: #333;
+}
+
+.insuranceList li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================================
+   RESPONSIVE – INSURANCE LIST
+========================================================= */
+@media (max-width: 768px) {
+  .insuranceList {
+    padding: 20px;
+  }
+
+  .insuranceList h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .insuranceList ul {
+    gap: 0;
+  }
+
+  .insuranceList li {
+    font-size: 0.95rem;
+  }
+}
+
+/* =========================================================
+   INSURANCE ROWS
+========================================================= */
+.insuranceItems {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.insuranceRow {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #f8f9fb;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.insuranceRow img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.insuranceRow span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* =========================================================
+   INSURANCE ROW RESPONSIVE
+========================================================= */
+@media (max-width: 600px) {
+  .insuranceRow {
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .insuranceRow img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .insuranceRow span {
+    font-size: 15px;
+  }
+}
+
+
+
+/* =========================================================
+   TITLE ANIMATION
+========================================================= */
+.insuranceTitle {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.6s ease-out;
+}
+
+.animateInsuranceTitle {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* =========================================================
+   INSURANCE ROW ANIMATION
+========================================================= */
+.insuranceRow {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.animateInsuranceRow {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   BENEFITS SECTION
+========================================================= */
+.benefits {
+  padding: 40px;
+  background: #fff;
+  text-align: center;
+}
+
+.benefitsTitle {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #1c3f6b;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* =========================================================
+   BENEFIT CARD
+========================================================= */
+.benefitCard {
+  background: #f8f9fa;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Animate when visible */
+.animateCard {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.benefitCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  background: #e6f0ff;
+}
+
+/* Icon */
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #cda75e;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.benefitCard:hover .icon {
+  transform: scale(1.2);
+  color: #c4585f;
+}
+
+/* Text */
+.benefitCard h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #000;
+  font-weight: 600;
+}
+
+.benefitCard p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 768px) {
+  .benefits {
+    padding: 0 10px;
+  }
+
+  .benefitsTitle {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .benefitCard h3 {
+    font-size: 18px;
+  }
+
+  .benefitCard p {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   INSURANCE PROCESS SECTION
+========================================================= */
+.insuranceProcess {
+  padding: 60px 10%;
+  background: #f4f7ff;
+  text-align: center;
+}
+
+.processTitle {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #425c86;
+}
+
+/* =========================================================
+   PROCESS STEPS
+========================================================= */
+.processSteps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.processStep {
+  flex: 1;
+  min-width: 220px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.processStep:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================================
+   STEP NUMBER
+========================================================= */
+.stepNumber {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #ffa45f, #f5842a);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* 3D effect */
+  box-shadow:
+    0 6px 14px rgba(245, 132, 42, 0.05),
+    inset 0 2px 3px rgba(255, 255, 255, 0.5),
+    inset 0 -3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.processStep h3 {
+  margin-bottom: 8px;
+  color: #222;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.processStep p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 768px) {
+  .processSteps {
+    flex-direction: column;
+  }
+
+  .processStep {
+    width: 100%;
+  }
+
+  .insuranceProcess {
+    padding: 20px;
+  }
+
+  .processTitle {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .processStep h3 {
+    font-size: 18px;
+  }
+}
+

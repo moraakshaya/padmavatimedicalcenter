@@ -1,0 +1,382 @@
+/* ---------------------------------------------------
+   HERO SECTION (Gradient Background)
+-----------------------------------------------------*/
+
+.baHero {
+  width: 100%;
+  background: linear-gradient(135deg, #425c86, #C4585F);
+  color: white;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.baContainer {
+  max-width: 800px;
+  padding: 50px 0 0;
+}
+
+.baTitle {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.baSubtitle {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+  .baHero {
+    text-align: center;
+    height: 40vh;
+  }
+
+  .baTitle {
+    font-size: 28px;
+    margin-bottom: 0;
+    margin-top: 35px;
+  }
+
+  .baSubtitle {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------
+   MAIN SECTION (Left Info + Right Form)
+-----------------------------------------------------*/
+
+.baMain {
+  padding: 60px 6%;
+}
+
+.baWrapper {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* ---------------- LEFT SECTION ---------------- */
+
+.baLeft h2 {
+  color: #425c86;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.baDesc {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.baPoints {
+  display: grid;
+  gap: 15px;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f5f7fb;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border-left: 4px solid #425c86;
+}
+
+.pointIcon {
+  font-size: 22px;
+  color: #2d2a2e;
+  flex-shrink: 0;
+}
+
+/* Image box */
+.baImageBox {
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.baImageBox img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+/* ---------------- RIGHT FORM SECTION ---------------- */
+
+.baRight h2 {
+  color: #425c86;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.baRight {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.baForm {
+  width: 100%;
+}
+
+.baForm select {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.baForm {
+  display: grid;
+  gap: 15px;
+}
+
+.baForm input,
+.baForm select,
+.baForm textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+  max-width: 100%;
+}
+
+.baForm input:focus,
+.baForm select:focus,
+.baForm textarea:focus {
+  border-color: #425c86;
+  box-shadow: 0 0 5px rgba(66, 92, 134, 0.3);
+}
+
+.baForm button {
+  background: linear-gradient(145deg, #ff4a4f, #ed282e);
+  color: white;
+  padding: 14px;
+  border: 1px solid #ed282e;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow:
+    0 8px 18px rgba(237, 40, 46, 0.05),
+    inset 0 3px 5px rgba(255, 255, 255, 0.35),
+    inset 0 -4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.baForm button:hover {
+  background: transparent;
+  border: 1px solid #c4585f;
+  transform: translateY(-4px);
+  color: #c4585f;
+  box-shadow: 1px 2px 4px #c4585f;
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width: 900px) {
+  .baMain {
+    padding: 20px;
+  }
+
+  .baWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .baLeft h2,
+  .baRight h2 {
+    text-align: center;
+  }
+
+  .baLeft h2 {
+    font-size: 24px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .baRight {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------
+   INFO CARDS SECTION
+-----------------------------------------------------*/
+
+.infoCards {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+ 
+}
+
+.infoCard {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border-top: 4px solid #425c86;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+}
+
+.cardIconRound {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: white;
+  background: linear-gradient(145deg, #f03a3f, #f5842a);
+  box-shadow:
+    0 6px 14px rgba(237, 40, 46, 0.05),
+    inset 0 2px 3px rgba(255, 255, 255, 0.5),
+    inset 0 -3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.infoCard h3 {
+  font-size: 18px;
+  color: #425c86;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.infoCard p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .infoCards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------------------------------------------------
+   ANIMATIONS
+-----------------------------------------------------*/
+
+.baTitle,
+.baSubtitle,
+.baDesc,
+.point {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease-out;
+}
+
+.slideInLeft {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.delay {
+  transition-delay: 0.2s;
+}
+
+.delay2 {
+  transition-delay: 0.3s;
+}
+
+.delay3 {
+  transition-delay: 0.4s;
+}
+
+.delay4 {
+  transition-delay: 0.5s;
+}
+
+.delay5 {
+  transition-delay: 0.6s;
+}
+
+.infoCard {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.slideInBottom {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.baRight {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all 0.8s ease-out;
+}
+
+.slideInRight {
+  opacity: 1;
+  transform: translateX(0);
+}

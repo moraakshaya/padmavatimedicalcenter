@@ -1,0 +1,187 @@
+.departmentsSection {
+  padding: 30px 40px 10px;
+  background-color: #fff;
+  overflow: hidden; /* Recommended to prevent animation scrollbars */
+}
+
+.departmentsTitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #425c86;
+  margin-bottom: 8px;
+}
+
+.departmentsSubtitle {
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+/* Desktop Grid */
+.departmentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.departmentCard {
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #f4d0d0;
+  border-radius: 14px;
+  transition: 0.3s ease;
+}
+
+.departmentCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f4d0d0;
+}
+
+/* Featured */
+.featuredBadge {
+  font-size: 13px;
+  color: #ed282e;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.featuredCard {
+  border-color: #ffcaca;
+}
+
+.departmentHeading {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d2a2b;
+  margin-bottom: 6px;
+}
+
+.departmentDesc {
+  color: #555;
+  font-size: 16px !important;
+  line-height: 1.5;
+}
+
+/* ----------------------------- */
+/* MOBILE CAROUSEL & VIEWS */
+/* ----------------------------- */
+.mobileView {
+  display: none;
+}
+
+
+
+@media (max-width: 768px) {
+  .departmentsSection {
+    padding: 20px;
+  }
+
+  .departmentsTitle {
+    font-size: 26px;
+  }
+
+  .departmentsSubtitle {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .departmentDesc {
+    font-size: 15px !important;
+  }
+  
+  .desktopView {
+    display: none;
+  }
+
+  .mobileView {
+    display: block;
+  }
+
+  .carouselContainer {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 10px;
+    scroll-behavior: smooth;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .carouselContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carouselCard {
+    flex: 0 0 90%;
+    scroll-snap-align: start;
+    padding: 22px;
+    background: white;
+    border: 1px solid #f4d0d0;
+    border-radius: 14px;
+  }
+
+  /* Pagination dots */
+  .carouselDots {
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  .activeDot {
+    background: #425c86;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* ---------------------------
+   ANIMATIONS
+---------------------------- */
+
+.slideInLeft {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeftKey 1s ease-out forwards;
+}
+
+@keyframes slideInLeftKey {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideUpFade {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUpFadeKey 1s ease-out forwards;
+}
+
+@keyframes slideUpFadeKey {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

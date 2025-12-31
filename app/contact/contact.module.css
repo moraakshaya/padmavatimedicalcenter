@@ -1,0 +1,531 @@
+.contactPage {
+  overflow-x: hidden;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.contactHero {
+  background: linear-gradient(135deg, #425c86, #c4585f);
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.contactHero h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.contactHero p {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+/* ---------------- CONTACT INFO SECTION ---------------- */
+
+.ciSection {
+  padding: 60px 0;
+  background: #ffffff;
+}
+
+.ciContainer {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.ciCard {
+  width: 340px;
+  padding: 30px 16px;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #ffffff, #f4f6f9);
+  text-align: center;
+  border: 1px solid #e6e6e6;
+
+  /* 3D depth */
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.08),
+    0 4px 8px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border 0.35s ease;
+}
+
+/* 3D hover lift */
+.ciCard:hover {
+  transform: translateY(-10px);
+  border-color: #425c86;
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.15),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ciIcon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(145deg, #ff9a4d, #f5842a);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin: 0 auto 15px auto;
+
+  /* 3D effect */
+  box-shadow:
+    0 8px 15px rgba(245, 132, 42, 0.05),
+    inset 0 2px 3px rgba(255, 255, 255, 0.6),
+    inset 0 -3px 6px rgba(0, 0, 0, 0.25);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ciCard h3 {
+  font-size: 20px;
+  color: #425c86;
+  margin-bottom: 8px;
+}
+
+.ciMain {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.ciSub {
+  font-size: 15px;
+  color: #777777;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 768px) {
+  .ciCard {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .contactHero {
+    height: 40vh;
+    padding: 0 10px;
+  }
+
+  .contactHero h1 {
+    font-size: 34px;
+    margin-top: 50px;
+  }
+
+  .contactHero p {
+    font-size: 16px;
+    padding: 0 5px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------- MAIN CONTACT SECTION ---------------- */
+
+.contactMain {
+  padding: 0 0 20px;
+  background: #ffffff;
+}
+
+.contactMainContainer {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* -------- LEFT FORM -------- */
+.contactForm {
+  flex: 1;
+}
+
+.contactForm h2 {
+  font-size: 32px;
+  color: #425c86;
+  margin-bottom: 25px;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactForm label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333333;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 12px 15px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.contactForm textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* -------- SEND BUTTON -------- */
+.sendBtn {
+  background: linear-gradient(145deg, #ff4a4f, #ed282e);
+  padding: 14px;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 10px;
+
+  box-shadow:
+    0 8px 18px rgba(237, 40, 46, 0.05),
+    inset 0 3px 5px rgba(255, 255, 255, 0.35),
+    inset 0 -4px 6px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.3s ease;
+}
+
+/* Hover = lifted */
+.sendBtn:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 14px 28px rgba(196, 88, 95, 0.15),
+    inset 0 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+/* Active = pressed */
+.sendBtn:active {
+  transform: translateY(1px);
+  box-shadow:
+    0 4px 8px rgba(196, 88, 95, 0.35),
+    inset 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* -------- RIGHT SIDE -------- */
+.contactRight {
+  flex: 1;
+}
+
+.visitCard h2 {
+  font-size: 32px;
+  color: #425c86;
+  margin-bottom: 20px;
+}
+
+.visitBox {
+  border: 1px solid #dcdcdc;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fafafa;
+  margin-bottom: 20px;
+}
+
+.visitBox h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+/* -------- MAP -------- */
+.mapBox iframe {
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+/* For tablets & small screens */
+@media (max-width: 900px) {
+  .contactMainContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contactForm h2,
+  .visitCard h2 {
+    text-align: center;
+  }
+}
+
+/* --- For Mobile Screens --- */
+@media (max-width: 600px) {
+  .contactMainContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contactMain {
+    padding: 0 20px;
+  }
+
+  /* FORM & HEADINGS */
+  .contactForm h2 {
+    font-size: 26px;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .sendBtn {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  /* RIGHT SIDE */
+  .visitCard h2 {
+    font-size: 26px;
+  }
+
+  .visitBox {
+    padding: 15px;
+  }
+
+  .visitBox h4 {
+    font-size: 16px;
+  }
+
+  .mapBox iframe {
+    height: 250px !important;
+  }
+}
+
+/* --- Extra Small Mobile Devices (below 450px) --- */
+@media (max-width: 450px) {
+  .contactMainContainer {
+    gap: 40px;
+  }
+
+  .contactForm,
+  .contactRight {
+    width: 100%;
+  }
+
+  .contactForm h2,
+  .visitCard h2 {
+    font-size: 26px;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    font-size: 13px;
+  }
+
+  .sendBtn {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .visitBox p {
+    font-size: 14px;
+  }
+}
+
+
+
+.container {
+  min-height: 100px;
+ 
+}
+
+
+
+
+
+/*
+------------------------
+CSS ANIMATIONS SECTION
+-------------------------
+*/
+
+/* ================= HERO ANIMATION ================= */
+
+
+/* Delay for subtitle */
+.delay {
+  transition-delay: 0.2s;
+}
+
+/* ================= CONTACT INFO CARDS ================= */
+
+/* Initial State */
+.ciCard {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+/* Slide Up Animation */
+.slideUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delays for stagger effect */
+.delay1 {
+  transition-delay: 0.15s;
+}
+
+.delay2 {
+  transition-delay: 0.3s;
+}
+
+.delay3 {
+  transition-delay: 0.45s;
+}
+
+/* ================= FORM & MAP ANIMATION ================= */
+
+/* Base animation styles */
+.slideLeft,
+.slideRight {
+  opacity: 0;
+  transform: translateX(0);
+  transition: all 0.8s ease-out;
+}
+
+/* LEFT → RIGHT */
+.slideLeft {
+  transform: translateX(-80px);
+}
+
+.slideLeft.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* RIGHT → LEFT */
+.slideRight {
+  transform: translateX(80px);
+}
+
+.slideRight.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ================= FORM RESULT MESSAGE ================= */
+
+.formResult {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+  opacity: 0;
+  transform: translateY(5px);
+}
+
+.formResult:not(:empty) {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* NOTE:
+  :contains() is NOT valid in pure CSS.
+  These classes should be toggled via React instead.
+*/
+
+.formResultSuccess {
+  background-color: #e6ffed;
+  color: #0a8a43;
+  border: 1px solid #0a8a43;
+}
+
+.formResultError {
+  background-color: #ffe6e6;
+  color: #b30000;
+  border: 1px solid #b30000;
+}
+
+/* ================= KEYFRAMES ================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+.heroTitle {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease-out;
+  will-change: transform, opacity;
+}
+
+.heroSubtitle {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease-out;
+  will-change: transform, opacity;
+}
+
+.slideInLeft {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.delay {
+  transition-delay: 0.2s;
+}

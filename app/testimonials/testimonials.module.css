@@ -1,0 +1,317 @@
+/* ------------------ HERO SECTION ------------------ */
+.testimonialHero {
+  width: 100%;
+  padding: 80px 5%;
+  text-align: center;
+  background: linear-gradient(135deg, #425c86, #c4585f);
+  color: white;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroTitle {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.heroSubtitle {
+  max-width: 700px;
+  font-size: 18px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.testimonials {
+  padding: 80px 5%;
+  background: #f5f7fa;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #1a3c6e;
+  font-weight: 700;
+}
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.testimonialCard {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease-in-out;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-5px);
+}
+
+.patientImg {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.feedback {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.patientInfo h3 {
+  margin: 0;
+  color: #1a3c6e;
+}
+
+.patientInfo span {
+  font-size: 13px;
+  color: #777;
+}
+
+.stars {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fbc02d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------- GOOGLE REVIEW CTA ------------- */
+.googleReviewBox {
+  margin-top: 50px;
+  text-align: center;
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 18px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.googleReviewBox p {
+  font-size: 18px;
+  color: #1a3c6e;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.googleReviewBtn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(145deg, #ff4a4f, #ed282e);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow:
+    0 8px 18px rgba(237, 40, 46, 0.05),
+    inset 0 3px 5px rgba(255, 255, 255, 0.35),
+    inset 0 -4px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Hover effect */
+.googleReviewBtn:hover {
+  background: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 18px #c45857;
+  color: #c45857;
+}
+
+/* Pulse animation on page load */
+.googleReviewBtn {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0px 0px 10px rgba(196, 88, 87, 0.4);
+  }
+  50% {
+    box-shadow: 0px 0px 20px rgba(196, 88, 87, 0.7);
+  }
+  100% {
+    box-shadow: 0px 0px 10px rgba(196, 88, 87, 0.8);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ RESPONSIVE ADJUSTMENTS ------------------ */
+@media (max-width: 768px) {
+  .testimonialHero {
+    height: 40vh;
+  }
+
+  .heroTitle {
+    font-size: 34px;
+    margin-top: 50px;
+  }
+
+  .heroSubtitle {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .testimonials {
+    padding: 20px;
+  }
+
+  .testimonials h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .feedback {
+    margin: 0 0 5px;
+  }
+
+  .googleReviewBox {
+    padding: 30px 5px;
+    margin-top: 25px;
+  }
+
+  .googleReviewBtn {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
+
+/* --------------------- ANIMATION STYLES --------------------- */
+/* Initial hidden state */
+.heroTitle,
+.heroSubtitle {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 0.8s ease-out;
+}
+
+/* Slide in from left */
+.slideLeft {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Delay for subtitle */
+.delay {
+  transition-delay: 0.2s;
+}
+
+/* ------------------------- GLOBAL ANIMATION ------------------------- */
+/* Hidden initial state */
+.slideLeft,
+.slideBottom,
+.title,
+.testimonialCard,
+.googleText,
+.googleReviewBtn {
+  opacity: 0;
+}
+
+/* Slide from left animation */
+.slideLeft {
+  transform: translateX(-60px);
+  animation: slideLeftAnim 0.8s ease-out forwards;
+}
+
+/* Slide from bottom animation */
+.slideBottom {
+  transform: translateY(60px);
+  animation: slideBottomAnim 0.8s ease-out forwards;
+}
+
+/* Keyframes */
+@keyframes slideLeftAnim {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideBottomAnim {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggered Cards */
+.testimonialCard {
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Smooth look for buttons */
+.googleReviewBtn {
+  display: inline-block;
+}
