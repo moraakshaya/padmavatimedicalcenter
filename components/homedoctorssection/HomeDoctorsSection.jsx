@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
-import DoctorsCards from "../doctorsCards/DoctorsCards";
+import DoctorsCards from "../doctorscards/DoctorsCards";
 import styles from "./HomeDoctorsSection.module.css";
 import { doctors } from "../../data/Doctor";
 

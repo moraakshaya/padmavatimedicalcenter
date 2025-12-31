@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./doctors.module.css";
 import { doctors } from "../../data/Doctor";
-import DoctorsCards from "@/components/doctorsCards/DoctorsCards";
+import DoctorsCards from "@/components/doctorscards/DoctorsCards";
 
 export default function Doctors() {
   const [selectedDept, setSelectedDept] = useState("All");

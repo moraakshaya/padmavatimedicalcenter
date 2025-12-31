@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./blog.module.css";
-import BlogCard from "@/components/BlogCard/BlogCard";
+import BlogCard from "@/components/blogcard/BlogCard";
 import blogData from "@/data/BlogData";
 
 export default function Blog() {
