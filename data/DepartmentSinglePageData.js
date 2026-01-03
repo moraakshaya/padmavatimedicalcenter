@@ -16,7 +16,7 @@ export const departmentsData = [
     id: 1,
     name: "Cardiology",
     slug: "cardiology",
-    image: "/departments/cardiology.webp",
+    image: "/departments/cardiology.png",
 
     overview:
       "The Cardiology Department is the flagship department of our hospital, providing world-class cardiac care, advanced diagnostics, and comprehensive treatment for all heart-related conditions.",
@@ -146,7 +146,7 @@ export const departmentsData = [
         qualifications: ["M.D.", "D.C.H."],
         status: "On-call available",
         experience: "20+ years",
-        img: "/assets/doctors/dr-prahlad-genphy-diabetologist.webp",
+        img: "/assets/doctors/dr-prahlad-genphy-diabetologist.png",
       },
       {
         name: "Dr. (Prof) S. Prem Sagar",
@@ -239,7 +239,7 @@ export const departmentsData = [
         qualifications: ["M.D.", "D.C.H."],
         status: "On-call available",
         experience: "20+ years",
-         img: "/assets/doctors/dr-prahlad-genphy-diabetologist.webp",
+         img: "/assets/doctors/dr-prahlad-genphy-diabetologist.png",
       },
       {
         name: "Dr. (Prof) S. Prem Sagar",
@@ -409,7 +409,7 @@ export const departmentsData = [
         qualifications: ["M.D.", "D.C.H.", "D.N.B."],
         status: "Available",
         experience: "20+ years",
-         img: "/assets/doctors/Pediatrician-dr-mv-Murali.webp",
+         img: "/assets/doctors/Pediatrician-dr-mv-Murali.png",
       }
     ],
 
@@ -487,7 +487,7 @@ export const departmentsData = [
         qualifications: ["M.D.", "D.M."],
         status: "On-call available",
         experience: "12+ years",
-         img: "/assets/doctors/neurophysician-dr-dineshkumar.webp",
+         img: "/assets/doctors/neurophysician-dr-dineshkumar.png",
       }
     ],
 
@@ -563,7 +563,7 @@ export const departmentsData = [
         qualifications: ["M.D."],
         status: "Available",
         experience: "15+ years",
-         img: "/assets/doctors/pulmonologist-dr-MaheshGudelli.webp",
+         img: "/assets/doctors/pulmonologist-dr-MaheshGudelli.png",
       }
     ],
 
@@ -641,7 +641,7 @@ export const departmentsData = [
         qualifications: ["M.S."],
         status: "Available",
         experience: "12+ years",
-         img: "/assets/doctors/vinayaksanthosh-orthopedician.webp",
+         img: "/assets/doctors/vinayaksanthosh-orthopedician.png",
       }
 
     ],
@@ -719,7 +719,7 @@ export const departmentsData = [
         qualifications: ["M.D.", "D.M."],
         status: "On-call available",
         experience: "15+ years",
-         img: "/assets/doctors/dr-g-sudhakar-nephrologist.jpg",
+         img: "/assets/doctors/dr-g-sudhakar-nephrologist.png",
       },
       {
         name: "Dr. K. Praveen",
@@ -917,7 +917,7 @@ export const departmentsData = [
     id: 12,
     name: "Pathology",
     slug: "pathology",
-    image: "/departments/pathology.webp",
+    image: "/departments/pathology.png",
 
     overview:
       "Our Pathology Department provides comprehensive diagnostic services with precise testing for early disease detection, accurate treatment planning, and reliable lab support, ensuring high-quality healthcare.",

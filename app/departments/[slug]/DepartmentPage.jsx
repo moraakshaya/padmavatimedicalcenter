@@ -2,25 +2,27 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
+import styles from "./department.module.css";
+
+// 1. Ensure all are imported correctly
 import {
   FiStar,
   FiActivity,
   FiAward,
   FiHeart,
   FiUserCheck,
+  FiPocket
 } from "react-icons/fi";
 
-import styles from "./department.module.css";
-
-/* ------------------ ICON MAP ------------------ */
+// 2. Define the map inside or outside the component
 const iconMap = {
   FiStar: FiStar,
-  FiUserCheck: FiUserCheck,
   FiActivity: FiActivity,
-  FiHeart: FiHeart,
   FiAward: FiAward,
+  FiHeart: FiHeart,
+  FiUserCheck: FiUserCheck,
+  FiPocket: FiPocket 
 };
-
 /* ------------------ REUSABLE ANIMATION HOOK ------------------ */
 const useSectionAnimation = () => {
   const ref = useRef(null);

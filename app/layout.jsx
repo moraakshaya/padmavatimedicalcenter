@@ -2,11 +2,13 @@ import './globals.css';
 // REMOVED /src from the paths below
 import Navbar from '@/components/navbar/Navbar'; 
 import Footer from '@/components/footer/Footer'; 
-import './globals.css';
 
 export const metadata = {
   title: 'Padmavati Hospital',
   description: 'Hospital website',
+  icons: {
+    icon: '/favicon.png',   // 👈 hospital icon
+  },
 };
 
 export default function RootLayout({ children }) {

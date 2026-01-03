@@ -27,7 +27,7 @@ export const doctors = [
   },
   {
     id: 3,
-    image: "/assets/doctors/dr-prahlad-genphy-diabetologist.webp",
+    image: "/assets/doctors/dr-prahlad-genphy-diabetologist.png",
     name: "Dr. (Prof) B. Prahlad",
     department: "Senior General Physician & Diabetologist",
     qualification: "M.D., D.C.H.",
@@ -60,7 +60,7 @@ export const doctors = [
   },
   {
     id: 6,
-    image: "/assets/doctors/Pediatrician-dr-mv-Murali.webp",
+    image: "/assets/doctors/Pediatrician-dr-mv-Murali.png",
     name: "Dr. (Prof) M.V. Murali",
     department: "Pediatrician",
     qualification: "M.D., D.C.H., D.N.B.",
@@ -71,7 +71,7 @@ export const doctors = [
   },
   {
     id: 7,
-    image: "/assets/doctors/neurophysician-dr-dineshkumar.webp",
+    image: "/assets/doctors/neurophysician-dr-dineshkumar.png",
     name: "Dr. B. Dinesh Kumar",
     department: "Neurologist",
     qualification: "M.D., D.M.",
@@ -82,7 +82,7 @@ export const doctors = [
   },
   {
     id: 8,
-    image: "/assets/doctors/pulmonologist-dr-MaheshGudelli.webp",
+    image: "/assets/doctors/pulmonologist-dr-MaheshGudelli.png",
     name: "Dr. Mahesh Gudelli",
     department: "Pulmonologist",
     qualification: "M.D.",
@@ -93,7 +93,7 @@ export const doctors = [
   },
   {
     id: 9,
-    image: "/assets/doctors/vinayaksanthosh-orthopedician.webp",
+    image: "/assets/doctors/vinayaksanthosh-orthopedician.png",
     name: "Dr. K. Vinyak Santosh",
     department: "Orthopedic Surgeon",
     qualification: "M.S.",
@@ -104,7 +104,7 @@ export const doctors = [
   },
   {
     id: 10,
-    image: "/assets/doctors/dr-g-sudhakar-nephrologist.jpg",
+    image: "/assets/doctors/dr-g-sudhakar-nephrologist.png",
     name: "Dr. G. Sudhakar",
     department: "Nephrologist",
     qualification: "M.D., D.M.",
