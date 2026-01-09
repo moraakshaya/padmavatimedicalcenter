@@ -27,7 +27,7 @@ export const doctors = [
   },
   {
     id: 3,
-    image: "/assets/doctors/dr-prahlad-genphy-diabetologist.png",
+    image: "/assets/doctors/dr1.png",
     name: "Dr. (Prof) B. Prahlad",
     department: "Senior General Physician & Diabetologist",
     qualification: "M.D., D.C.H.",

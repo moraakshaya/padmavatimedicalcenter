@@ -146,7 +146,7 @@ export const departmentsData = [
         qualifications: ["M.D.", "D.C.H."],
         status: "On-call available",
         experience: "20+ years",
-        img: "/assets/doctors/dr-prahlad-genphy-diabetologist.png",
+        img: "/assets/doctors/dr1.png",
       },
       {
         name: "Dr. (Prof) S. Prem Sagar",
@@ -239,7 +239,7 @@ export const departmentsData = [
         qualifications: ["M.D.", "D.C.H."],
         status: "On-call available",
         experience: "20+ years",
-         img: "/assets/doctors/dr-prahlad-genphy-diabetologist.png",
+         img: "/assets/doctors/dr1.png",
       },
       {
         name: "Dr. (Prof) S. Prem Sagar",
