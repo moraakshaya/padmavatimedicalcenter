@@ -719,7 +719,7 @@ export const departmentsData = [
         qualifications: ["M.D.", "D.M."],
         status: "On-call available",
         experience: "15+ years",
-         img: "/assets/doctors/dr-g-sudhakar-nephrologist.png",
+         img: "/assets/doctors/dr-g-sudhakar-nephrolgist.png",
       },
       {
         name: "Dr. K. Praveen",

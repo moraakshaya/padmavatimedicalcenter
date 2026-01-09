@@ -104,7 +104,7 @@ export const doctors = [
   },
   {
     id: 10,
-    image: "/assets/doctors/dr-g-sudhakar-nephrologist.png",
+    image: "/assets/doctors/dr-g-sudhakar-nephrolgist.png",
     name: "Dr. G. Sudhakar",
     department: "Nephrologist",
     qualification: "M.D., D.M.",
