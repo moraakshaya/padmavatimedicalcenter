@@ -11,7 +11,11 @@ import {
   FiAward,
   FiHeart,
   FiUserCheck,
-  FiPocket
+  FiPocket,
+  FiLayers,
+  FiSmile,
+  FiShield,
+  FiCpu
 } from "react-icons/fi";
 
 // 2. Define the map inside or outside the component
@@ -21,7 +25,12 @@ const iconMap = {
   FiAward: FiAward,
   FiHeart: FiHeart,
   FiUserCheck: FiUserCheck,
-  FiPocket: FiPocket 
+  FiPocket: FiPocket,
+  FiLayers: FiLayers,
+  FiSmile: FiSmile,
+  FiShield: FiShield,
+  FiCpu: FiCpu
+
 };
 /* ------------------ REUSABLE ANIMATION HOOK ------------------ */
 const useSectionAnimation = () => {

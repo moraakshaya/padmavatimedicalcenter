@@ -16,13 +16,13 @@ export const departmentsData = [
     id: 1,
     name: "Cardiology",
     slug: "cardiology",
-    image: "/departments/cardiology.png",
+    image: "/departments/cardiology.webp",
 
     overview:
       "The Cardiology Department is the flagship department of our hospital, providing world-class cardiac care, advanced diagnostics, and comprehensive treatment for all heart-related conditions.",
 
     about:
-      "The Cardiology Department serves as the cornerstone of our hospital, offering advanced care for patients with heart and vascular conditions...",
+       "The Cardiology Department serves as the cornerstone of our hospital, offering advanced care for patients with heart and vascular conditions. We provide comprehensive diagnosis and treatment for heart attacks, arrhythmias, heart failure, coronary artery disease, and valve disorders. Our department emphasizes early detection, preventive heart care, and personalized management plans to ensure optimal outcomes. Equipped with state-of-the-art diagnostic tools including ECG, Echocardiography, TMT, Holter monitoring, and interventional cardiac suites, we deliver precise evaluation and effective treatment for both acute and chronic cardiac conditions. Led by highly qualified cardiologists Dr. G. Kondal Rao (M.D., D.M., FSCAI, M.E.) and Dr. G. Kiran Kumar (M.D., D.M.), the department is dedicated to patient-centered care, advanced cardiac therapies, and long-term heart health, establishing our hospital as a trusted center for cardiovascular excellence.",
 
     services: [
       "ECG, Echo, and Treadmill Test (TMT)",
@@ -53,7 +53,7 @@ export const departmentsData = [
         designation: "Cardiologist",
         about:
           "Dr. G. Kondal Rao is a highly experienced cardiologist specializing in interventional cardiology.",
-        qualifications: ["M.D.", "D.M.", "FSCAI", "M.E."],
+        qualifications: ["M.D.D.M. FSCAI."],
         status: "On-call available",
         experience: "20+ years",
         img: "/assets/doctors/dr1.png",
@@ -63,7 +63,7 @@ export const departmentsData = [
         designation: "Cardiologist",
         about:
           "Dr. G. Kiran Kumar specializes in comprehensive cardiac care and preventive cardiology.",
-        qualifications: ["M.D.", "D.M."],
+        qualifications: ["MD. D.M."],
         status: "On-call available",
         experience: "15+ years",
         img: "/assets/doctors/dr1.png",
@@ -143,7 +143,7 @@ export const departmentsData = [
         designation: "Senior General Physician",
         about:
           "Dr. (Prof) B. Prahlad is an experienced Senior Physician with expertise in diabetes management, internal medicine, and chronic disease control. Known for his patient-first approach and systematic diagnostic evaluation.",
-        qualifications: ["M.D.", "D.C.H."],
+        qualifications: ["M.D.D.C.H"],
         status: "On-call available",
         experience: "20+ years",
         img: "/assets/doctors/dr1.png",
@@ -236,7 +236,7 @@ export const departmentsData = [
         designation: "Senior Diabetologist",
         about:
           "Dr. (Prof) B. Prahlad has extensive experience in diabetes management, insulin therapy, and long-term monitoring of metabolic disorders. He ensures personalized treatment plans and advanced diabetes care tailored to each patient’s needs.",
-        qualifications: ["M.D.", "D.C.H."],
+        qualifications: ["M.D.D.C.H"],
         status: "On-call available",
         experience: "20+ years",
          img: "/assets/doctors/dr1.png",
@@ -327,7 +327,7 @@ export const departmentsData = [
         designation: "Consultant Gastroenterologist",
         about:
           "Dr. G. S. Sameer Kumar is a highly experienced Gastroenterologist specializing in the diagnosis and treatment of digestive, liver, and pancreatic disorders. He is well-known for his precision in endoscopic procedures and patient-centered gastro care, offering effective treatment for both acute and chronic gastrointestinal conditions.",
-        qualifications: ["D.N.B.", "D.N.B."],
+        qualifications: ["DNB. DNB."],
         status: "Available",
         experience: "15+ years",
          img: "/assets/doctors/dr1.png",
@@ -406,7 +406,7 @@ export const departmentsData = [
         designation: "Senior Pediatrician",
         about:
           "Dr. (Prof) M.V. Murali is a highly experienced pediatrician specializing in newborn care, child development, vaccinations, and management of acute and chronic childhood illnesses. Known for his patient-friendly approach and accurate clinical diagnosis.",
-        qualifications: ["M.D.", "D.C.H.", "D.N.B."],
+        qualifications: ["M.D.D.C.H.D.N.B"],
         status: "Available",
         experience: "20+ years",
          img: "/assets/doctors/Pediatrician-dr-mv-Murali.png",
@@ -484,7 +484,7 @@ export const departmentsData = [
         designation: "Consultant Neurologist",
         about:
           "Dr. B. Dinesh Kumar is an experienced neurologist specializing in stroke care, epilepsy, migraine management, neuropathy, and complex nerve disorders. He is known for his precise diagnosis and patient-focused neurological treatment.",
-        qualifications: ["M.D.", "D.M."],
+        qualifications: ["M.D., D.M"],
         status: "On-call available",
         experience: "12+ years",
          img: "/assets/doctors/neurophysician-dr-dineshkumar.png",
@@ -716,7 +716,7 @@ export const departmentsData = [
         designation: "Nephrologist",
         about:
           "Dr. G. Sudhakar is an experienced nephrologist specializing in chronic kidney disease, dialysis, and renal health management. He is known for his precise diagnostic skills and patient-focused care.",
-        qualifications: ["M.D.", "D.M."],
+        qualifications: ["M.D.D.M."],
         status: "On-call available",
         experience: "15+ years",
          img: "/assets/doctors/dr-g-sudhakar-nephrolgist.png",
@@ -726,7 +726,7 @@ export const departmentsData = [
         designation: "Nephrologist",
         about:
           "Dr. K. Praveen specializes in kidney health, acute and chronic renal disorders, and post-transplant care. He provides personalized treatment plans for optimal kidney function and patient well-being.",
-        qualifications: ["M.D.", "D.M.", "SGPGI"],
+        qualifications: ["MD. D.M. SGPGI"],
         status: "On-call available",
         experience: "12+ years",
        img: "/assets/doctors/dr1.png",
@@ -877,7 +877,7 @@ export const departmentsData = [
         designation: "Anesthesiologist",
         about:
           "Dr. B.J. Arjun Kumar is an experienced anesthesiologist specializing in perioperative care, critical care management, and pain control. He is known for ensuring patient safety and comfort during all procedures.",
-        qualifications: ["MBBS", "D.A."],
+        qualifications: ["MBBS, D.A"],
         status: "On-call available",
         experience: "15+ years",
          img: "/assets/doctors/dr1.png",
@@ -917,7 +917,7 @@ export const departmentsData = [
     id: 12,
     name: "Pathology",
     slug: "pathology",
-    image: "/departments/pathology.png",
+    image: "/departments/pathology.webp",
 
     overview:
       "Our Pathology Department provides comprehensive diagnostic services with precise testing for early disease detection, accurate treatment planning, and reliable lab support, ensuring high-quality healthcare.",
@@ -1030,7 +1030,7 @@ export const departmentsData = [
         designation: "Consultant Urologist",
         about:
           "Dr. P. Ashok Kumar is an experienced urologist specializing in urinary tract disorders, prostate care, male infertility, and minimally invasive urological procedures. Known for precise diagnosis and patient-focused treatment plans.",
-        qualifications: ["M.S.", "M.Ch."],
+        qualifications: ["M.S., M.C.H."],
         status: "On-call available",
         experience: "15+ years",
        img: "/assets/doctors/dr1.png",
@@ -1104,7 +1104,7 @@ export const departmentsData = [
         designation: "Consultant Dermatologist",
         about:
           "Dr. Purnaiah is an experienced dermatologist specializing in acne, pigmentation, eczema, hair disorders, and cosmetic dermatology. He is known for accurate diagnosis and personalized patient care.",
-        qualifications: ["M.D. Dermatology"],
+        qualifications: [""],
         status: "Available",
         experience: "12+ years",
         img: "/assets/doctors/dr1.png",
@@ -1181,7 +1181,7 @@ export const departmentsData = [
         designation: "Physiotherapist",
         about:
           "Dr. T. Shiva Prasad is an experienced physiotherapist specializing in rehabilitation, injury recovery, and mobility improvement through personalized exercise and therapy plans.",
-        qualifications: ["B.P.T.", "M.I.A.P."],
+        qualifications: ["B.P.T. M.I.A.P"],
         status: "Available",
         experience: "10+ years",
         img: "/assets/doctors/dr1.png",
