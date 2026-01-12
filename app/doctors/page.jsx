@@ -108,7 +108,7 @@ export default function Doctors() {
 
           <div className={styles.cardioCardsWrapper}>
             {doctors
-              .filter((doc) => doc.department === "Cardiologist")
+              .filter((doc) => doc.slug === "dr-g-kondal-rao" || doc.slug === "dr-g-kiran-kumar")
               .map((doctor, index) => (
                 <DoctorsCards key={index} {...doctor} />
               ))}

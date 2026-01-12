@@ -28,6 +28,7 @@ const departments = [
   "Urology",
   "Dermatology",
   "Physiotherapy",
+  "Gynecology"
 ];
 
 function Navbar() {

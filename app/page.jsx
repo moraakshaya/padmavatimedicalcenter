@@ -140,7 +140,7 @@ export default function Home() {
           <div
             className={styles.heroCard}
             onClick={() =>
-              window.open("https://wa.me/919999999999", "_blank")
+              window.open("https://wa.me/919160668686", "_blank")
             }
           >
             <FaWhatsapp className={styles.heroIcon} />
@@ -172,8 +172,7 @@ export default function Home() {
               <span onClick={() => setEmergencyOpen(false)}>✖</span>
             </div>
             <div className={styles.emergencyBody}>
-              <p>📞 Ambulance: 108</p>
-              <p>☎ Hospital: +91 98765 43210</p>
+              <p>☎ Hospital: +91 9160668686</p>
               <p>🏥 24/7 Available</p>
             </div>
           </div>

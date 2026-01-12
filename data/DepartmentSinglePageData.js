@@ -1214,7 +1214,85 @@ export const departmentsData = [
         icon: "FiAward"
       }
     ]
-  }
+  },
+
+  //16. Gynecology
+{
+  id: 16,
+  name: "Gynecology",
+  slug: "gynecology",
+  image: "/departments/gynecology.jpg",
+
+  overview:
+    "Our Gynecology Department provides comprehensive women’s healthcare services including preventive care, diagnosis, and treatment of reproductive health conditions with compassion and advanced medical expertise.",
+
+  about:
+    "The Gynecology Department is dedicated to providing complete healthcare solutions for women at every stage of life. Our experienced gynecologists offer services ranging from routine check-ups and preventive screenings to advanced diagnosis and treatment of gynecological disorders. The department specializes in menstrual health management, pregnancy care, infertility evaluation, menopause management, and treatment of reproductive system conditions. With a strong focus on patient comfort, privacy, and personalized care, our team utilizes modern diagnostic tools and evidence-based treatment approaches to ensure optimal health outcomes. Led by Dr. S. Lakshmi Devi, a highly experienced gynecologist, the department emphasizes compassionate care, clinical excellence, and women’s wellness.",
+
+  services: [
+    "Routine gynecological check-ups",
+    "Antenatal and postnatal care",
+    "Menstrual disorder management",
+    "Family planning and contraception",
+    "Infertility evaluation and treatment",
+    "Menopause management",
+    "High-risk pregnancy care",
+    "Gynecological surgeries",
+    "Cervical cancer screening"
+  ],
+
+  conditions: [
+    "Menstrual irregularities",
+    "Polycystic Ovary Syndrome (PCOS)",
+    "Infertility",
+    "Uterine fibroids",
+    "Ovarian cysts",
+    "Endometriosis",
+    "Menopausal disorders",
+    "High-risk pregnancies"
+  ],
+
+  doctors: [
+    {
+      name: "",
+      designation: "Gynecologist",
+      about:
+        "",
+      qualifications: [""],
+      status: "",
+      experience: "",
+      img: "/assets/doctors/dr1.png",
+    }
+  ],
+
+  highlights: [
+    {
+      title: "Experienced Gynecologists",
+      description:
+        "Highly skilled specialists providing compassionate and comprehensive women’s healthcare.",
+      icon: "FiUserCheck"
+    },
+    {
+      title: "Advanced Maternity Care",
+      description:
+        "Comprehensive prenatal, delivery, and postnatal services with modern facilities.",
+      icon: "FiHeart"
+    },
+    {
+      title: "Modern Diagnostic Services",
+      description:
+        "Advanced screening and diagnostic tools for accurate gynecological assessments.",
+      icon: "FiActivity"
+    },
+    {
+      title: "Personalized Women’s Care",
+      description:
+        "Customized treatment plans tailored to individual health needs and life stages.",
+      icon: "FiAward"
+    }
+  ]
+}
+
 ];
 
 export default departmentsData;
