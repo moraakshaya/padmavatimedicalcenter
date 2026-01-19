@@ -27,7 +27,7 @@ export const doctors = [
   },
   {
     id: 3,
-    image: "/assets/doctors/dr1.png",
+    image: "/assets/doctors/dr-b-prahlad-generalphysician.png",
     name: "Dr. (Prof) B. Prahlad",
     department: "Senior General Physician & Diabetologist",
     qualification: "M.D.D.C.H",
@@ -38,7 +38,7 @@ export const doctors = [
   },
   {
     id: 4,
-    image: "/assets/doctors/dr1.png",
+    image: "/assets/doctors/dr-premsagar-generalphysician.png",
     name: "Dr. (Prof) S. Prem Sagar",
     department: "Senior General Physician & Diabetologist",
     qualification: "M.D.",
@@ -49,7 +49,7 @@ export const doctors = [
   },
   {
     id: 5,
-    image: "/assets/doctors/dr1.png",
+    image: "/assets/doctors/dr-g-s-sameerkumar-gastroenternologist.png",
     name: "Dr. G.S. Sameer Kumar",
     department: "Gastroenterologist",
     qualification: "DNB. DNB.",
@@ -115,7 +115,7 @@ export const doctors = [
   },
     {
     id: 11,
-    image: "/assets/doctors/dr1.png",
+    image: "/assets/doctors/dr-k-praveenkumar-nephrologist.png",
     name: "Dr. K. Praveen",
     department: "Nephrologist",
     qualification: "MD. D.M. SGPGI",

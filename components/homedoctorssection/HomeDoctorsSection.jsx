@@ -58,7 +58,7 @@ export default function HomeDoctorsSection() {
   return (
     <div className={styles.homeDoctorsWrapper} ref={sectionRef}>
       <h2 className={`${styles.homeDoctorsTitle} ${animated ? styles.slideInLeft : ""}`}>
-        Meet Our Doctors
+      Our Specialist Doctors
       </h2>
       <p className={`${styles.homeDoctorsSubtitle} ${animated ? styles.slideInLeft : ""}`}>
         Experienced and caring medical professionals dedicated to your health

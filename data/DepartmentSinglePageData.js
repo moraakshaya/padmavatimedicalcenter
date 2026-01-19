@@ -146,7 +146,7 @@ export const departmentsData = [
         qualifications: ["M.D.D.C.H"],
         status: "On-call available",
         experience: "20+ years",
-        img: "/assets/doctors/dr1.png",
+        img: "/assets/doctors/dr-b-prahlad-generalphysician.png",
       },
       {
         name: "Dr. (Prof) S. Prem Sagar",
@@ -156,7 +156,7 @@ export const departmentsData = [
         qualifications: ["M.D."],
         status: "On-call available",
         experience: "18+ years",
-        img: "/assets/doctors/dr1.png",
+        img: "/assets/doctors/dr-premsagar-generalphysician.png",
       }
     ],
 
@@ -239,7 +239,7 @@ export const departmentsData = [
         qualifications: ["M.D.D.C.H"],
         status: "On-call available",
         experience: "20+ years",
-         img: "/assets/doctors/dr1.png",
+         img: "/assets/doctors/dr-b-prahlad-generalphysician.png",
       },
       {
         name: "Dr. (Prof) S. Prem Sagar",
@@ -249,7 +249,7 @@ export const departmentsData = [
         qualifications: ["M.D."],
         status: "On-call available",
         experience: "18+ years",
-         img: "/assets/doctors/dr1.png",
+         img: "/assets/doctors/dr-premsagar-generalphysician.png",
       }
     ],
 
@@ -330,7 +330,7 @@ export const departmentsData = [
         qualifications: ["DNB. DNB."],
         status: "Available",
         experience: "15+ years",
-         img: "/assets/doctors/dr1.png",
+         img: "/assets/doctors/dr-g-s-sameerkumar-gastroenternologist.png",
       }
     ],
 
@@ -729,7 +729,7 @@ export const departmentsData = [
         qualifications: ["MD. D.M. SGPGI"],
         status: "On-call available",
         experience: "12+ years",
-       img: "/assets/doctors/dr1.png",
+       img: "/assets/doctors/dr-k-praveenkumar-nephrologist.png",
       }
     ],
 
