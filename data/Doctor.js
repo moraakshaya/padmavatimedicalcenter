@@ -6,7 +6,7 @@
 export const doctors = [
   {
     id: 1,
-    image: "/assets/doctors/dr1.png", // Path relative to the public folder
+    image: "/assets/doctors/dr-g-kondal-rao-cardiologist.png", // Path relative to the public folder
     name: "Dr. G. Kondal Rao",
     department: "Senior Interventional Cardiologist",
     qualification: "M.D.D.M. FSCAI.",

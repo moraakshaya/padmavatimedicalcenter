@@ -241,7 +241,7 @@ function About() {
                             }`}
                     >
                         <Image
-                            src="/assets/doctors/dr1.png"
+                            src="/assets/doctors/dr-g-kondal-rao-cardiologist.png"
                             alt="Dr. G. Kondal Rao"
                             width={400}
                             height={450}

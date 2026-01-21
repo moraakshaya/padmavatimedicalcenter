@@ -56,7 +56,7 @@ export const departmentsData = [
         qualifications: ["M.D.D.M. FSCAI."],
         status: "On-call available",
         experience: "20+ years",
-        img: "/assets/doctors/dr1.png",
+        img: "/assets/doctors/dr-g-kondal-rao-cardiologist.png",
       },
       {
         name: "Dr. G. Kiran Kumar",
