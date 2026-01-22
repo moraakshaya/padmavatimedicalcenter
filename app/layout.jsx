@@ -7,7 +7,7 @@ export const metadata = {
   title: 'Padmavati Hospital',
   description: 'Hospital website',
   icons: {
-    icon: '/favicon.png',   // 👈 hospital icon
+    icon: '/favicon.png',   // 👈 use app/favicon.png as favicon
   },
 };
 
@@ -15,6 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <title>{metadata.title}</title>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
