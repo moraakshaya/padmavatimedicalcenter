@@ -10,7 +10,7 @@ export const doctors = [
     name: "Dr. G. Kondal Rao",
     department: "Senior Interventional Cardiologist",
     qualification: "M.D.D.M. FSCAI.",
-    regNo: "12607",
+    regNo: "Reg No: 12607",
     phone: "+91 9866635947",
     availability: "-",
     slug: "dr-g-kondal-rao" // Useful for dynamic routing later
@@ -31,7 +31,7 @@ export const doctors = [
     name: "Dr. (Prof) B. Prahlad",
     department: "Senior General Physician & Diabetologist",
     qualification: "M.D.D.C.H",
-    regNo: "3415",
+    // regNo: "3415",
     phone: "+91 9866635947",
     availability: "9:30 AM & 6:00 PM",
     slug: "dr-b-prahlad"
@@ -42,7 +42,7 @@ export const doctors = [
     name: "Dr. (Prof) S. Prem Sagar",
     department: "Senior General Physician & Diabetologist",
     qualification: "M.D.",
-    regNo: "35832",
+    // regNo: "35832",
     phone: "+91 9866635947",
     availability: "8:30 AM",
     slug: "dr-s-prem-sagar"
@@ -53,7 +53,7 @@ export const doctors = [
     name: "Dr. G.S. Sameer Kumar",
     department: "Gastroenterologist",
     qualification: "DNB. DNB.",
-    regNo: "76055",
+    // regNo: "76055",
     phone: "+91 9866635947",
     availability: "6:30 PM",
     slug: "dr-gs-sameer-kumar"
@@ -64,7 +64,7 @@ export const doctors = [
     name: "Dr. (Prof) M.V. Murali",
     department: "Pediatrician",
     qualification: "M.D.D.C.H.D.N.B",
-    regNo: "10538",
+    // regNo: "10538",
     phone: "+91 9866635947",
     availability: "9:00 AM - 5:00 PM",
     slug: "dr-mv-murali"
@@ -75,7 +75,7 @@ export const doctors = [
     name: "Dr. B. Dinesh Kumar",
     department: "Neurophysician",
     qualification: "M.D., D.M",
-    regNo: "77613",
+    // regNo: "77613",
     phone: "+91 9866635947",
     availability: "Oncall",
     slug: "dr-b-dinesh-kumar"
@@ -86,7 +86,7 @@ export const doctors = [
     name: "Dr. Mahesh Gudelli",
     department: "Pulmonologist",
     qualification: "M.D.",
-    regNo: "56962",
+    // regNo: "56962",
     phone: "+91 9866635947",
     availability: "9:00 AM - 5:00 PM",
     slug: "dr-mahesh-gudelli"
@@ -97,7 +97,7 @@ export const doctors = [
     name: "Dr. K. Vinyak Santosh",
     department: "Orthopedician",
     qualification: "M.S.",
-    regNo: "01290",
+    // regNo: "01290",
     phone: "+91 9866635947",
     availability: "Oncall",
     slug: "dr-k-vinyak-santosh"
@@ -108,7 +108,7 @@ export const doctors = [
     name: "Dr. G. Sudhakar",
     department: "Nephrologist",
     qualification: "M.D.D.M.",
-    regNo: "53663",
+    // regNo: "53663",
     phone: "+91 9866635947",
     availability: "Oncall",
     slug: "dr-g-sudhakar"

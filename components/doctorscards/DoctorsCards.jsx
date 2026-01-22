@@ -26,7 +26,7 @@ function DoctorsCards({
         <h3>{name}</h3>
         <p className={styles.department}>{department}</p>
         <p className={styles.qualification}>{qualification}</p>
-        <p className={styles.regNo}>Reg No: {regNo}</p>
+        <p className={styles.regNo}> {regNo}</p>
 
         <div className={styles.doctorContactRow}>
           <span className={styles.availability}>{availability}</span>
