@@ -212,7 +212,7 @@ function About() {
                                 Angiography & Interventions
                             </li>
                             <li>
-                                <strong>Registration:</strong> 12607 – Andhra Pradesh Medical
+                                <strong>Registration:</strong> 12607 – Telangana Medical
                                 Council (1998)
                             </li>
                         </ul>

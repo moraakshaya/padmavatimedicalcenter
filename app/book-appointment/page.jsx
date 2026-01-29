@@ -188,7 +188,7 @@ export default function BookAppointment() {
                 </div>
 
                 <div className={styles.infoCards}>
-                  <div
+                  {/* <div
                     className={`${styles.infoCard} ${
                       cardsVisible
                         ? `${styles.slideInBottom} ${styles.delay}`
@@ -198,19 +198,9 @@ export default function BookAppointment() {
                     <div className={styles.cardIconRound}>🏅</div>
                     <h3>ISO Certified</h3>
                     <p>Maintaining international quality and safety standards.</p>
-                  </div>
+                  </div> */}
 
-                  <div
-                    className={`${styles.infoCard} ${
-                      cardsVisible
-                        ? `${styles.slideInBottom} ${styles.delay2}`
-                        : ""
-                    }`}
-                  >
-                    <div className={styles.cardIconRound}>🏥</div>
-                    <h3>NABH Recommended</h3>
-                    <p>Trusted hospital with verified medical excellence.</p>
-                  </div>
+                  
 
                   <div
                     className={`${styles.infoCard} ${
