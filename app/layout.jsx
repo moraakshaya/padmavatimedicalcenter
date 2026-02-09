@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <title>{metadata.title}</title>
+        <meta name="google-site-verification" content="59bJe5b02qLO_qXKfZQ5AfHFuuC-VvzRo3DGIZ8zcFg" />
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <link
