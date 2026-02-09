@@ -1,5 +1,6 @@
 import './globals.css';
 // REMOVED /src from the paths below
+import Script from 'next/script';
 import Navbar from '@/components/navbar/Navbar'; 
 import Footer from '@/components/footer/Footer'; 
 
@@ -25,6 +26,16 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-9WBPT4T1YW"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);} 
+          gtag('js', new Date());
+          gtag('config', 'G-9WBPT4T1YW');`}
+        </Script>
       </head>
 
       <body>
