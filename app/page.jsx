@@ -140,7 +140,7 @@ export default function Home() {
           <div
             className={styles.heroCard}
             onClick={() =>
-              window.open("https://wa.me/919160668686", "_blank")
+              window.open("https://wa.me/9198666 35947", "_blank")
             }
           >
             <FaWhatsapp className={styles.heroIcon} />
