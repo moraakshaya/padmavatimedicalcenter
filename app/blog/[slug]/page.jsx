@@ -3,22 +3,20 @@ import blogData from "@/data/BlogData";
 
 // ✅ Generate SEO Metadata (SERVER ONLY)
 export async function generateMetadata({ params }) {
-  const { slug } = params; // destructure first
-
-  const blog = blogData.find((item) => item.slug === slug);
+  const { slug } = params;
+  const blog = blogData.find((b) => b.slug === slug);
 
   if (!blog) {
+    console.warn(`generateMetadata: no blog for slug "${slug}"`);
     return {
       title: "Blog Post | Padmavati Hospital",
       description: "Read our latest health articles.",
     };
   }
 
-  // fall back to the main title/description if metadata is missing
   return {
-    title: blog.metaTitle || blog.title || "Padmavati Hospital Blog",
-    description:
-      blog.metaDescription || blog.description || "Read our latest health articles.",
+    title: blog.metaTitle || blog.title,
+    description: blog.metaDescription || blog.description,
   };
 }
 
