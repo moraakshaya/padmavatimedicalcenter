@@ -3,7 +3,9 @@ import blogData from "@/data/BlogData";
 
 // ✅ Generate SEO Metadata (SERVER ONLY)
 export async function generateMetadata({ params }) {
-  const blog = blogData.find((item) => item.slug === params.slug);
+  const { slug } = params; // destructure first
+
+  const blog = blogData.find((item) => item.slug === slug);
 
   if (!blog) {
     return {
@@ -13,11 +15,8 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: blog.metaTitle || `${blog.title} | Padmavati Hospital`,
-    description:
-      blog.metaDescription ||
-      blog.description ||
-      "Read this article from Padmavati Hospital.",
+    title: blog.metaTitle,
+    description: blog.metaDescription,
   };
 }
 
