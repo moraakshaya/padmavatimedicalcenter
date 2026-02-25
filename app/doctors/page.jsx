@@ -5,6 +5,12 @@ import styles from "./doctors.module.css";
 import { doctors } from "../../data/Doctor";
 import DoctorsCards from "@/components/doctorscards/DoctorsCards";
 
+export const metadata = {
+  title: "Doctors | Padmavati Hospital",
+  description:
+    "Meet the expert doctors at Padmavati Hospital, located near me in Tarnaka, Secunderabad, Hyderabad. Our experienced specialists across multiple departments provide advanced, personalized care using modern technology to ensure the best outcomes for every patient. Book an appointment today.",
+};
+
 export default function Doctors() {
   const [selectedDept, setSelectedDept] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");

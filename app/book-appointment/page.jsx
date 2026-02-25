@@ -4,6 +4,12 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./book-appointment.module.css";
 import { FaUserMd, FaClock, FaPhoneAlt, FaHeartbeat } from "react-icons/fa";
 
+export const metadata = {
+  title: "Book Appointment | Padmavati Hospital",
+  description:
+    "Book your appointment at Padmavati Hospital with ease. Schedule consultations with our experienced doctors, choose your preferred date and time, and receive quality healthcare services without long waiting. Quick, convenient, and patient-friendly booking for all your medical needs.",
+};
+
 export default function BookAppointment() {
   /* ================= CLIENT MOUNT ================= */
   const [mounted, setMounted] = useState(false);

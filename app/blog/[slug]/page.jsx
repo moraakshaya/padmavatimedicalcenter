@@ -8,6 +8,18 @@ import Link from "next/link";
 import styles from "./blogDetails.module.css";
 import blogData from "@/data/BlogData";
 
+// dynamic metadata for individual blog posts
+export function generateMetadata({ params }) {
+  const blog = blogData.find((item) => item.slug === params.slug);
+  if (!blog) {
+    return { title: "Blog Post | Padmavati Hospital" };
+  }
+  return {
+    title: blog.metaTitle || `${blog.title} | Padmavati Hospital`,
+    description: blog.metaDescription || blog.description || "Read this article from Padmavati Hospital.",
+  };
+}
+
 export default function BlogDetails() {
   const { slug } = useParams();
   const blog = blogData.find((item) => item.slug === slug);

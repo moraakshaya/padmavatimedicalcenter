@@ -3,6 +3,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./gallery.module.css";
 
+export const metadata = {
+  title: "Gallery | Padmavati Hospital",
+  description:
+    "Explore the Gallery of Padmavati Hospital, Tarnaka, Secunderabad, Hyderabad, showcasing our modern facilities, advanced medical equipment, patient care areas, operation theatres, and dedicated healthcare team committed to excellence in treatment and service.",
+};
+
 const galleryData = [
   // Hospital Campaigns
   { id: 1, category: "events", img: "/gallery/gallery10.webp" },

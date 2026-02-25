@@ -4,6 +4,9 @@
   id: 0,
    slug: "understanding-heart-health-tips",
   title: "Understanding Heart Health Tips",
+  metaTitle: "Understanding Heart Health Tips | Padmavati Hospital",
+  metaDescription:
+    "Explore essential heart health tips from Padmavati Hospital, including guidance on diet, exercise, stress management, blood pressure control, and early warning signs. Learn how to protect your heart, prevent cardiovascular diseases, and maintain a healthy lifestyle with expert medical advice.",
   date: "12 Nov 2024",
   category: "Heart",
   image: "/blog/hearthealthy.webp",
@@ -71,6 +74,9 @@
   id: 1,
   slug: "common-heart-problems-warning-signs",
   title: "Common Heart Problems and Warning Signs",
+  metaTitle: "Common Heart Problems and Warning Signs | Padmavati Hospital",
+  metaDescription:
+    "Learn about common heart problems and their warning signs at Padmavati Hospital. Discover symptoms like chest pain, shortness of breath, fatigue, and irregular heartbeat, and understand when to seek medical care. Early awareness can help prevent serious complications and protect your heart health.",
   date: "05 Oct 2024",
   category: "Heart",
   image: "/blog/commonheartproblems.png",

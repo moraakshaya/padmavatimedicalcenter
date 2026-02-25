@@ -5,6 +5,12 @@ import styles from "./blog.module.css";
 import BlogCard from "@/components/blogcard/BlogCard";
 import blogData from "@/data/BlogData";
 
+export const metadata = {
+  title: "Blogs | Padmavati Hospital",
+  description:
+    "Read the latest blogs from Padmavati Hospital, Tarnaka, Secunderabad, Hyderabad, featuring expert health tips, disease awareness, treatment updates, preventive care advice, and wellness guidance from our specialists to help you stay informed and healthy",
+};
+
 export default function Blog() {
   /* ---------------- HERO ANIMATION ---------------- */
   const heroRef = useRef(null);

@@ -119,7 +119,7 @@ function Footer() {
 
           <div className={styles.footerRow}>
             <div className={styles.verticalLine}></div>
-            <Link href="/terms-&-conditions">Terms & Conditions</Link>
+            <Link href="/terms-conditions">Terms & Conditions</Link>
           </div>
 
           <div className={styles.footerRow}>

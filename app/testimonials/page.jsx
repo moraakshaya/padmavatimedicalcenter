@@ -4,6 +4,12 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./testimonials.module.css";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Testimonials | Padmavati Hospital",
+  description:
+    "Read patient testimonials of Padmavati Hospital, Tarnaka, Secunderabad, Hyderabad, and discover real experiences, success stories, and feedback highlighting our expert doctors, compassionate care, advanced treatments, and commitment to patient satisfaction and trust",
+};
+
 const testimonials = [
   {
     name: "Rohit Sharma",

@@ -5,6 +5,13 @@ import { FaHeart, FaAward, FaShieldAlt, FaUsers } from "react-icons/fa";
 import styles from "./about.module.css";
 import Image from "next/image";
 
+export const metadata = {
+  title: "About Us | Padmavati Hospital",
+  description:
+    "Learn about Padmavati Hospital, a leading multispeciality hospital in Tarnaka, Secunderabad, Hyderabad, dedicated to advanced medical care, experienced doctors, modern technology, and compassionate service. We provide comprehensive treatments with a patient-first approach and 24/7 emergency support. Book your consultation today.",
+};
+
+
 function About() {
     /* HERO ANIMATION */
     const [animateHero, setAnimateHero] = useState(false);

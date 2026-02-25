@@ -4,6 +4,12 @@ import React, { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./privacy-policy.module.css";
 
+export const metadata = {
+  title: "Privacy Policy | Padmavati Hospital",
+  description:
+    "Read the Privacy Policy of Padmavati Hospital to learn how we collect, use, and protect your personal and medical information. We are committed to safeguarding patient data, ensuring confidentiality, and maintaining transparency in how your information is handled across our services and website.",
+};
+
 export default function PrivacyPolicy() {
   const textRef = useRef(null);
   const imageRef = useRef(null);

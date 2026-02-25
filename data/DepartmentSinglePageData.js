@@ -16,6 +16,8 @@ export const departmentsData = [
     id: 1,
     name: "Cardiology",
     slug: "cardiology",
+    metaTitle: "Best Cardiology Hospital in Tarnaka, Secunderabad, Hyderabad | Padmavati Hospital",
+    metaDescription: "Padmavati Hospital is the best cardiology hospital, located near me in Tarnaka, Secunderabad, Hyderabad, offering advanced heart care, 24/7 emergency services, expert cardiologists, modern cath lab, angiography, angioplasty, and comprehensive cardiac treatments for all heart conditions. Book your appointment today.",
     image: "/departments/cardiology.webp",
 
     overview:
@@ -103,6 +105,8 @@ export const departmentsData = [
     id: 2,
     name: "General Medicine",
     slug: "general-medicine",
+    metaTitle: "Best General Medicine Hospital in Tarnaka, Secunderabad, Hyderabad | Padmavati Hospital",
+    metaDescription: "Padmavati Hospital is the best general medicine hospital, located near me in Tarnaka, Secunderabad, Hyderabad, providing expert physicians, accurate diagnosis, preventive care, and advanced treatment for diabetes, infections, hypertension, and chronic conditions with 24/7 support. Book your consultation today.",
     image: "/departments/generalmedicine.png",
 
     overview:
@@ -193,6 +197,8 @@ export const departmentsData = [
     id: 3,
     name: "Diabetology",
     slug: "diabetology",
+    metaTitle: "Best Diabetology Hospital in Tarnaka, Secunderabad, Hyderabad | Padmavati Hospital",
+    metaDescription: "Padmavati Hospital is the best diabetology hospital, located near me in Tarnaka, Secunderabad, Hyderabad, offering expert diabetologists, advanced diagnostics, personalized treatment plans, diet counseling, and comprehensive care to manage diabetes and prevent complications. Book your consultation today.",
     image: "/departments/diabetology.png",
 
     overview:
@@ -286,6 +292,8 @@ export const departmentsData = [
     id: 4,
     name: "Gastroenterology",
     slug: "gastroenterology",
+    metaTitle: "Best Gastroenterology Hospital in Tarnaka, Secunderabad, Hyderabad | Padmavati Hospital",
+    metaDescription: "Padmavati Hospital is the best gastroenterology hospital, located near me in Tarnaka, Secunderabad, Hyderabad, offering expert gastroenterologists, advanced endoscopy, colonoscopy, liver care, and comprehensive treatment for digestive disorders with 24/7 support. Book your consultation today.",
     image: "/departments/gastroenterology.png",
 
     overview:
@@ -368,6 +376,8 @@ export const departmentsData = [
     id: 5,
     name: "Pediatrics",
     slug: "pediatrics",
+    metaTitle: "Best Pediatrics Hospital in Tarnaka, Secunderabad, Hyderabad | Padmavati Hospital",
+    metaDescription: "Padmavati Hospital is the best pediatrics hospital, located near me in Tarnaka, Secunderabad, Hyderabad, offering expert pediatricians, neonatal care, vaccinations, growth monitoring, and advanced treatment for infants, children, and adolescents in a safe, child-friendly environment. Book your appointment today.",
     image: "/departments/pediatric.png",
 
     overview:
@@ -446,6 +456,8 @@ export const departmentsData = [
     id: 6,
     name: "Neurology",
     slug: "neurology",
+    metaTitle: "Best Neurology Hospital in Tarnaka, Secunderabad, Hyderabad | Padmavati Hospital",
+    metaDescription: "Padmavati Hospital is the best neurology hospital, located near me in Tarnaka, Secunderabad, Hyderabad, offering expert neurologists, advanced diagnostics, stroke care, epilepsy management, and treatment for brain and spine disorders with 24/7 emergency support. Book your consultation today.",
     image: "/departments/neurology.jpg",
 
     overview:
@@ -524,6 +536,8 @@ export const departmentsData = [
     id: 7,
     name: "Pulmonology",
     slug: "pulmonology",
+    metaTitle: "Best Pulmonology Hospital in Tarnaka, Secunderabad, Hyderabad | Padmavati Hospital",
+    metaDescription: "Padmavati Hospital is the best pulmonology hospital, located near me in Tarnaka, Secunderabad, Hyderabad, offering expert pulmonologists, advanced lung diagnostics, asthma and COPD management, sleep studies, and comprehensive respiratory care with 24/7 support. Book your consultation today.",
     image: "/departments/pulmonology.webp",
 
     overview:
@@ -600,6 +614,8 @@ export const departmentsData = [
     id: 8,
     name: "Orthopedics",
     slug: "orthopedics",
+    metaTitle: "Best Orthopedics Hospital in Tarnaka, Secunderabad, Hyderabad | Padmavati Hospital",
+    metaDescription: "Padmavati Hospital is the best orthopedics hospital, located near me in Tarnaka, Secunderabad, Hyderabad, offering expert orthopedic surgeons, advanced joint replacement, trauma care, spine treatments, sports injury management, and rehabilitation with modern facilities. Book your consultation today.",
     image: "/departments/orthopedics.webp",
 
     overview:
@@ -680,6 +696,8 @@ export const departmentsData = [
     id: 9,
     name: "Nephrology",
     slug: "nephrology",
+    metaTitle: "Best Nephrology Hospital in Tarnaka, Secunderabad, Hyderabad | Padmavati Hospital",
+    metaDescription: "Padmavati Hospital is the best nephrology hospital in Tarnaka, Secunderabad, Hyderabad, offering expert nephrologists, advanced dialysis, kidney care, treatment for renal disorders, hypertension management, and comprehensive support with modern facilities. Book your consultation today.",
     image: "/departments/nephrology.png",
 
     overview:
@@ -766,6 +784,8 @@ export const departmentsData = [
     id: 10,
     name: "General Surgery",
     slug: "general-surgery",
+    metaTitle: "Best General Surgery Hospital in Tarnaka, Secunderabad, Hyderabad | Padmavati Hospital",
+    metaDescription: "Padmavati Hospital is the best general surgery hospital, located near me in Tarnaka, Secunderabad, Hyderabad, offering expert surgeons, advanced laparoscopic and minimally invasive procedures, hernia and gallbladder surgeries, trauma care, and comprehensive pre- and post-operative support. Book your consultation today.",
     image: "/departments/generalsurgery.jpg",
 
     overview:
@@ -842,6 +862,8 @@ export const departmentsData = [
     id: 11,
     name: "Anesthesiology",
     slug: "anesthesiology",
+    metaTitle: "Best Anesthesiology Hospital in Tarnaka, Secunderabad, Hyderabad | Padmavati Hospital",
+    metaDescription: "Padmavati Hospital is the best anesthesiology hospital, located near me in Tarnaka, Secunderabad, Hyderabad, offering expert anesthesiologists, safe anesthesia care for all surgeries, advanced pain management, critical care support, and 24/7 monitoring with modern technology. Book your consultation today.",
     image: "/departments/anesthesiology.jpg",
 
     overview:
@@ -917,6 +939,8 @@ export const departmentsData = [
     id: 12,
     name: "Pathology",
     slug: "pathology",
+    metaTitle: "Best Pathology Hospital in Tarnaka, Secunderabad, Hyderabad | Padmavati Hospital",
+    metaDescription: "Padmavati Hospital is the best pathology hospital, located near me in Tarnaka, Secunderabad, Hyderabad, offering accurate lab testing, advanced diagnostics, blood tests, health check packages, and quick reports with modern equipment and expert pathologists. Book your test today.",
     image: "/departments/pathology.webp",
 
     overview:
@@ -993,6 +1017,8 @@ export const departmentsData = [
     id: 13,
     name: "Urology",
     slug: "urology",
+    metaTitle: "Best Urology Hospital in Tarnaka, Secunderabad, Hyderabad | Padmavati Hospital",
+    metaDescription: "Padmavati Hospital is the best urology hospital, located near me in Tarnaka, Secunderabad, Hyderabad, offering expert urologists, advanced diagnostics, kidney stone treatment, prostate care, urinary disorder management, and minimally invasive urological surgeries. Book your consultation today.",
     image: "/departments/urology.jpg",
 
     overview:
@@ -1066,6 +1092,8 @@ export const departmentsData = [
     id: 14,
     name: "Dermatology",
     slug: "dermatology",
+    metaTitle: "Best Dermatology Hospital in Tarnaka, Secunderabad, Hyderabad | Padmavati Hospital",
+    metaDescription: "Padmavati Hospital is the best dermatology hospital in Tarnaka, Secunderabad, Hyderabad, offering expert dermatologists, advanced skin and hair treatments, acne and allergy care, cosmetic dermatology, and personalized solutions with modern technology. Book your consultation today.",
     image: "/departments/dermatology.jpg",
 
     overview:
@@ -1145,6 +1173,8 @@ export const departmentsData = [
     id: 15,
     name: "Physiotherapy",
     slug: "physiotherapy",
+    metaTitle: "Best Physiotherapy Hospital in Tarnaka, Secunderabad, Hyderabad | Padmavati Hospital",
+    metaDescription: "Padmavati Hospital is the best physiotherapy hospital, located near me in Tarnaka, Secunderabad, Hyderabad, offering expert physiotherapists, advanced rehabilitation, pain management, post-surgery recovery, sports injury care, and personalized therapy programs to restore mobility and strength. Book your session today.",
     image: "/departments/physiotherapy.jpg",
 
     overview:
@@ -1221,6 +1251,8 @@ export const departmentsData = [
   id: 16,
   name: "Gynecology",
   slug: "gynecology",
+  metaTitle: "Best Gynecology Hospital in Tarnaka, Secunderabad, Hyderabad | Padmavati Hospital",
+  metaDescription: "Padmavati Hospital is the best gynecology hospital, located near me in Tarnaka, Secunderabad, Hyderabad, offering expert gynecologists, maternity care, high-risk pregnancy management, infertility treatment, advanced laparoscopic surgeries, and comprehensive women’s healthcare. Book your consultation today.",
   image: "/departments/gynecology.jpg",
 
   overview:
