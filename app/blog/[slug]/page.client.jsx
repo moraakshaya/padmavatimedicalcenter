@@ -14,7 +14,7 @@ export default function BlogDetails() {
 
   if (!blog) return <h2>Blog Not Found</h2>;
 
-  const relatedPosts = blogData.filter(
+  const relatedPosts = blogData.filter( 
     (item) => item.category === blog.category && item.slug !== blog.slug
   );
 

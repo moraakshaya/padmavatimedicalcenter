@@ -14,9 +14,11 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  // fall back to the main title/description if metadata is missing
   return {
-    title: blog.metaTitle,
-    description: blog.metaDescription,
+    title: blog.metaTitle || blog.title || "Padmavati Hospital Blog",
+    description:
+      blog.metaDescription || blog.description || "Read our latest health articles.",
   };
 }
 
