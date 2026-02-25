@@ -1,13 +1,13 @@
 import BlogDetailsClient from "./page.client";
 import blogData from "@/data/BlogData";
 
-// ✅ Generate SEO Metadata (SERVER ONLY)
+// ✅ Generate SEO Metadata
 export async function generateMetadata({ params }) {
-  const { slug } = params;
-  const blog = blogData.find((b) => b.slug === slug);
+  const { slug } = await params;   // ✅ FIX: await params
+
+  const blog = blogData.find((item) => item.slug === slug);
 
   if (!blog) {
-    console.warn(`generateMetadata: no blog for slug "${slug}"`);
     return {
       title: "Blog Post | Padmavati Hospital",
       description: "Read our latest health articles.",
@@ -15,12 +15,12 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: blog.metaTitle || blog.title,
-    description: blog.metaDescription || blog.description,
+    title: blog.metaTitle,
+    description: blog.metaDescription,
   };
 }
 
-// ✅ Optional (Recommended for static SEO)
+// ✅ Optional (Static generation)
 export async function generateStaticParams() {
   return blogData.map((blog) => ({
     slug: blog.slug,
@@ -28,6 +28,8 @@ export async function generateStaticParams() {
 }
 
 // ✅ Render Client Component
-export default function Page({ params }) {
-  return <BlogDetailsClient slug={params.slug} />;
+export default async function Page({ params }) {
+  const { slug } = await params;   // ✅ FIX: await params
+
+  return <BlogDetailsClient slug={slug} />;
 }
