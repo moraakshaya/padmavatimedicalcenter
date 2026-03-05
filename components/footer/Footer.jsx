@@ -36,16 +36,16 @@ function Footer() {
           <h4 className={styles.footerHeading}>Follow Us</h4>
 
           <div className={styles.footerSocial}>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            <a href="https://www.facebook.com/profile.php?id=100067123274494" target="_blank" rel="noreferrer">
               <FaFacebookF />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/padmavati_medical_center/" target="_blank" rel="noreferrer">
               <FaInstagram />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            <a href="https://x.com/padmavati_care" target="_blank" rel="noreferrer">
               <FaTwitter />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer">
+            <a href="https://www.youtube.com/@padmavatimedicalcenter" target="_blank" rel="noreferrer">
               <FaYoutube />
             </a>
           </div>
